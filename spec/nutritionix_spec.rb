@@ -18,10 +18,17 @@ describe 'Nutritionix API' do
   end
 
   it 'should return an item object that contains data on all its nutritional content' do
-    pending
+    results = JSON.parse(agent.get_item('eajmz6GbcLXtMluFNhEr'))
+    results.should_not be_nil
   end
 
   it 'should return a brand object that contains data on all its nutritional content' do
+    results = JSON.parse(agent.get_brand('SQksuzwib4H1h9'))
+    results.should_not be_nil
+  end
+
+  it 'should return application error without app id and key' do
+    #{"error_message"=>"application with id=\"\" was not found", "error_code"=>"application_not_found"}
     pending
   end
 end
