@@ -18,7 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+*For NXQL Supported search:
+
+    app_id = '<YOUR_APP_ID>'
+    app_key = '<YOUR_APP_KEY>'
+    provider = Nutritionix::Api_1_1.new(app_id, app_key)
+    search_params = {
+      offset: 0,
+      limit: 50,
+      fields: ['brand_id', 'brand_name', 'item_id', 'item_name', 'nf_calories'],
+      query: 'potato'
+    }
+    results_json = provider.nxql_search(search_params)
+    puts "Results: #{results_json}"
+
+*Note:
+  * There is a standalone test script available at /script/test_api_1_1.rb
+    which can be readily used for testing.You only need to replace <YOUR_APP_ID>
+    and <YOUR_APP_KEY> with your nutritionix app credentials.
+
+  * Logs generated can be found at default location <HOME_DIRECTORY>/nutritionix_api_logs.txt
 
 ## Contributing
 
