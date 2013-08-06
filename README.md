@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-*For NXQL Supported search:
+* For NXQL Supported search:
 
     app_id = '<YOUR_APP_ID>'
     app_key = '<YOUR_APP_KEY>'
@@ -32,12 +32,12 @@ Or install it yourself as:
     results_json = provider.nxql_search(search_params)
     puts "Results: #{results_json}"
 
-*Note:
+* Note:
   * There is a standalone test script available at /script/test_api_1_1.rb
-    which can be readily used for testing.You only need to replace <YOUR_APP_ID>
-    and <YOUR_APP_KEY> with your nutritionix app credentials.
+    which can be readily used for testing.You only need to replace &lt;YOUR_APP_ID&gt;
+    and &lt;YOUR_APP_KEY&gt; with your nutritionix app credentials.
 
-  * Logs generated can be found at default location <HOME_DIRECTORY>/nutritionix_api_logs.txt
+  * Logs generated can be found at default location &lt;HOME_DIRECTORY&gt;/nutritionix_api_logs.txt
 
 ## Contributing
 
